@@ -50,7 +50,7 @@ For a private L1 where you want free transactions:
 
 ## Fee Distribution (RewardManager)
 
-By default, fees go to the block producer. Configure alternatives:
+By default, all fees are **burned** (`allowFeeRecipients: false` in genesis). Configure alternatives:
 
 ```solidity
 IRewardManager constant REWARD_MANAGER =

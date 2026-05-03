@@ -72,7 +72,7 @@ See `etna-changes.md` for full details.
 - **L1-only validators (post-Etna)**: Pay continuous fee, validate only their L1(s)
 - **Minimum stake**: 2,000 AVAX for primary network; L1-specific for L1-only validators
 - **Uptime requirement**: ≥ 80% uptime to earn staking rewards
-- **Delegation**: Primary network validators can accept delegations (up to 5x their own stake)
+- **Delegation**: Primary network validators can accept delegations (up to the minimum of 3,000,000 AVAX and 5x their own stake)
 
 ## AVAX Tokenomics
 
@@ -80,7 +80,7 @@ See `etna-changes.md` for full details.
 - **P-Chain staking**: AVAX locked as stake earns staking rewards
 - **L1 validator fees**: Post-Etna, L1 validators pay continuous AVAX fees to the primary network
 - **Total supply**: 720 million AVAX (fixed cap)
-- **Initial distribution**: 50% to staking rewards pool, 50% to foundation/team/ecosystem
+- **Initial distribution**: 360 million AVAX minted at genesis; remaining 360 million minted over time as staking rewards to validators
 
 ## How Avalanche L1s Communicate
 

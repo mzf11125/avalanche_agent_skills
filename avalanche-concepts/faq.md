@@ -91,7 +91,10 @@ Teleporter is the high-level SDK for ICM (Interchain Messaging). It's a set of S
 
 Teleporter is deployed at a deterministic address on every Subnet-EVM chain:
 - Mainnet & Fuji: `0x253b2784c75e510dD0fF1da844684a1aC0aa5fcf` (TeleporterMessenger v1.0.0)
-- Always use TeleporterRegistry to get the latest version: `0xF86Cb19Ad8405AEFa7d09C778215D2Cb6eBfB228`
+- Always use TeleporterRegistry to get the latest version:
+  - Mainnet C-Chain: `0x7C43605E14F391720e1b37E49C78C4b03A488d98`
+  - Fuji C-Chain: `0xF86Cb19Ad8405AEFa7d09C778215D2Cb6eBfB228`
+  - Custom L1s: must deploy their own registry
 
 ---
 

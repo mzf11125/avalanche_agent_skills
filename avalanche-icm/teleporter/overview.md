@@ -15,17 +15,17 @@ Teleporter is the official high-level SDK for Avalanche ICM. It consists of:
 
 | Contract | Address |
 |----------|---------|
-| TeleporterMessenger v1.0.0 | `0x253b2784c75e510dD0fF1da844684a1aC0aa5fcf` |
-| TeleporterRegistry | `0xF86Cb19Ad8405AEFa7d09C778215D2Cb6eBfB228` |
+| TeleporterMessenger | `0x253b2784c75e510dD0fF1da844684a1aC0aa5fcf` |
+| TeleporterRegistry (C-Chain) | `0x7C43605E14F391720e1b37E49C78C4b03A488d98` |
 
 ### Fuji Testnet
 
 | Contract | Address |
 |----------|---------|
-| TeleporterMessenger v1.0.0 | `0x253b2784c75e510dD0fF1da844684a1aC0aa5fcf` |
-| TeleporterRegistry | `0xF86Cb19Ad8405AEFa7d09C778215D2Cb6eBfB228` |
+| TeleporterMessenger | `0x253b2784c75e510dD0fF1da844684a1aC0aa5fcf` |
+| TeleporterRegistry (C-Chain) | `0xF86Cb19Ad8405AEFa7d09C778215D2Cb6eBfB228` |
 
-These addresses are the same on all Subnet-EVM chains (deterministic deployment).
+> **Note**: `TeleporterMessenger` is deployed at the same address on all chains via Nick's method. `TeleporterRegistry` is **not** universal — the addresses above are for C-Chain only. Custom L1s must deploy their own `TeleporterRegistry`. See [Deploy TeleporterRegistry to a Subnet](https://github.com/ava-labs/icm-services/blob/main/README.md#deploy-teleporter-to-a-subnet).
 
 ## Installing the Teleporter Contracts Package
 

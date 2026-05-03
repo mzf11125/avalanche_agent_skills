@@ -6,10 +6,13 @@ TeleporterRegistry tracks all deployed versions of the Teleporter contract. Inst
 
 ## Address
 
-Same on all Subnet-EVM chains (mainnet and Fuji):
-```
-0xF86Cb19Ad8405AEFa7d09C778215D2Cb6eBfB228
-```
+`TeleporterRegistry` is **not** deployed at a universal address. The canonical addresses are:
+
+| Network | Address |
+|---------|---------|
+| Mainnet C-Chain | `0x7C43605E14F391720e1b37E49C78C4b03A488d98` |
+| Fuji C-Chain | `0xF86Cb19Ad8405AEFa7d09C778215D2Cb6eBfB228` |
+| Custom L1s | Must be deployed separately — see [Deploy TeleporterRegistry to a Subnet](https://github.com/ava-labs/icm-services/blob/main/README.md#deploy-teleporter-to-a-subnet) |
 
 ## Interface
 
@@ -68,7 +71,9 @@ contract MyApp is TeleporterRegistryApp {
 
 ```solidity
 ITeleporterRegistry constant REGISTRY =
-    ITeleporterRegistry(0xF86Cb19Ad8405AEFa7d09C778215D2Cb6eBfB228);
+    ITeleporterRegistry(0x7C43605E14F391720e1b37E49C78C4b03A488d98); // Mainnet C-Chain
+    // Fuji C-Chain: 0xF86Cb19Ad8405AEFa7d09C778215D2Cb6eBfB228
+    // Custom L1s: deploy your own registry
 
 function sendMessage(...) external {
     ITeleporterMessenger teleporter = REGISTRY.getLatestTeleporter();

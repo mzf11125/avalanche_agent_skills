@@ -39,8 +39,11 @@ Mint native tokens (the chain's gas token) to any address.
 
 ```solidity
 interface INativeMinter {
+    event NativeCoinMinted(address indexed sender, address indexed recipient, uint256 amount);
+
     function mintNativeCoin(address addr, uint256 amount) external;
     function setAdmin(address addr) external;
+    function setManager(address addr) external;
     function setEnabled(address addr) external;
     function setNone(address addr) external;
     function readAllowList(address addr) external view returns (uint256);
@@ -84,11 +87,26 @@ interface IFeeManager {
         uint256 maxBlockGasCost;
         uint256 blockGasCostStep;
     }
-    function setFeeConfig(FeeConfig calldata config) external;
+    event FeeConfigChanged(address indexed sender, FeeConfig oldFeeConfig, FeeConfig newFeeConfig);
+
+    // Set fee config — takes individual uint256 params, not a struct
+    function setFeeConfig(
+        uint256 gasLimit,
+        uint256 targetBlockRate,
+        uint256 minBaseFee,
+        uint256 targetGas,
+        uint256 baseFeeChangeDenominator,
+        uint256 minBlockGasCost,
+        uint256 maxBlockGasCost,
+        uint256 blockGasCostStep
+    ) external;
     function getFeeConfig() external view returns (FeeConfig memory);
     function getFeeConfigLastChangedAt() external view returns (uint256);
     function setAdmin(address addr) external;
+    function setManager(address addr) external;
     function setEnabled(address addr) external;
+    function setNone(address addr) external;
+    function readAllowList(address addr) external view returns (uint256);
 }
 
 IFeeManager constant FEE_MANAGER =

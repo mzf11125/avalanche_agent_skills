@@ -21,13 +21,17 @@ import "@avalabs/ictt/TokenHome/ERC20TokenHome.sol";
 
 // Deploy this on the chain where your ERC-20 token lives
 // Constructor args:
-//   teleporterRegistryAddress: 0xF86Cb19Ad8405AEFa7d09C778215D2Cb6eBfB228
+//   teleporterRegistryAddress:
+//     Mainnet C-Chain: 0x7C43605E14F391720e1b37E49C78C4b03A488d98
+//     Fuji C-Chain:    0xF86Cb19Ad8405AEFa7d09C778215D2Cb6eBfB228
+//     Custom L1:       deploy your own registry first
 //   teleporterManager: your admin address
 //   tokenAddress: your ERC-20 token address
 //   tokenDecimals: your token's decimals (e.g., 18)
 ```
 
 ```bash
+# Example using Fuji C-Chain registry
 forge create @avalabs/ictt/TokenHome/ERC20TokenHome.sol:ERC20TokenHome \
   --constructor-args \
     0xF86Cb19Ad8405AEFa7d09C778215D2Cb6eBfB228 \
@@ -55,6 +59,7 @@ import "@avalabs/ictt/TokenRemote/ERC20TokenRemote.sol";
 forge create @avalabs/ictt/TokenRemote/ERC20TokenRemote.sol:ERC20TokenRemote \
   --constructor-args \
     "(0xF86Cb19Ad8405AEFa7d09C778215D2Cb6eBfB228,$ADMIN,$SOURCE_BLOCKCHAIN_ID,$TOKEN_HOME_ADDRESS,18)" \
+    # Use 0x7C43605E14F391720e1b37E49C78C4b03A488d98 for Mainnet C-Chain
     "Wrapped MyToken" \
     "wMYT" \
     18 \

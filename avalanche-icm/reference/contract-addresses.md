@@ -10,11 +10,13 @@ Same address on all Subnet-EVM chains (mainnet and Fuji):
 
 ## TeleporterRegistry
 
-Same address on all Subnet-EVM chains:
+`TeleporterRegistry` is **not** deployed at a universal address. Canonical addresses:
 
-```
-0xF86Cb19Ad8405AEFa7d09C778215D2Cb6eBfB228
-```
+| Network | Address |
+|---------|---------|
+| Mainnet C-Chain | `0x7C43605E14F391720e1b37E49C78C4b03A488d98` |
+| Fuji C-Chain | `0xF86Cb19Ad8405AEFa7d09C778215D2Cb6eBfB228` |
+| Custom L1s | Must be deployed separately |
 
 ## WAVAX (Wrapped AVAX) — Fee Token
 
@@ -39,8 +41,8 @@ Same address on all Subnet-EVM chains:
 cast code 0x253b2784c75e510dD0fF1da844684a1aC0aa5fcf --rpc-url https://api.avax.network/ext/bc/C/rpc
 # Should return non-empty bytecode
 
-# Check latest Teleporter version via registry
-cast call 0xF86Cb19Ad8405AEFa7d09C778215D2Cb6eBfB228 \
+# Check latest Teleporter version via registry (Mainnet C-Chain)
+cast call 0x7C43605E14F391720e1b37E49C78C4b03A488d98 \
   "getLatestVersion()(uint256)" \
   --rpc-url https://api.avax.network/ext/bc/C/rpc
 ```

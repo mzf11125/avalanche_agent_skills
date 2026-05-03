@@ -3,7 +3,10 @@
 ## Prerequisites
 
 - Both chains must have Teleporter deployed at `0x253b2784c75e510dD0fF1da844684a1aC0aa5fcf`
-- Both chains must have TeleporterRegistry at `0xF86Cb19Ad8405AEFa7d09C778215D2Cb6eBfB228`
+- Both chains must have TeleporterRegistry deployed:
+  - Fuji C-Chain: `0xF86Cb19Ad8405AEFa7d09C778215D2Cb6eBfB228`
+  - Mainnet C-Chain: `0x7C43605E14F391720e1b37E49C78C4b03A488d98`
+  - Custom L1s: must deploy their own registry
 - A running AWM relayer configured for both chains
 - For `NativeTokenRemote`: `ContractNativeMinter` precompile enabled on destination chain
 
@@ -14,7 +17,7 @@
 ```bash
 export SOURCE_RPC="https://api.avax-test.network/ext/bc/C/rpc"
 export DEST_RPC="https://your-l1-rpc/ext/bc/CHAIN/rpc"
-export REGISTRY="0xF86Cb19Ad8405AEFa7d09C778215D2Cb6eBfB228"
+export REGISTRY="0xF86Cb19Ad8405AEFa7d09C778215D2Cb6eBfB228"  # Fuji; use 0x7C43605E14F391720e1b37E49C78C4b03A488d98 for Mainnet
 
 TOKEN_HOME=$(forge create lib/avalanche-interchain-token-transfer/contracts/TokenHome/ERC20TokenHome.sol:ERC20TokenHome \
   --constructor-args $REGISTRY $ADMIN $TOKEN_ADDRESS 18 \

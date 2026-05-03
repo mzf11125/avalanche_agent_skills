@@ -59,9 +59,9 @@ Teleporter is pre-deployed on every Subnet-EVM chain at:
 ```
 
 Use TeleporterRegistry to always get the latest version:
-```
-0xF86Cb19Ad8405AEFa7d09C778215D2Cb6eBfB228
-```
+- Mainnet C-Chain: `0x7C43605E14F391720e1b37E49C78C4b03A488d98`
+- Fuji C-Chain: `0xF86Cb19Ad8405AEFa7d09C778215D2Cb6eBfB228`
+- Custom L1s: deploy your own registry
 
 ## Step 4: Write the Sender Contract
 

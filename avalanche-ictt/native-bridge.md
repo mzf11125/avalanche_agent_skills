@@ -11,6 +11,7 @@
 Locks native tokens (e.g., AVAX) sent to it and triggers a mint on the remote chain.
 
 ```bash
+# Example using Fuji C-Chain registry (use 0x7C43605E14F391720e1b37E49C78C4b03A488d98 for Mainnet)
 forge create @avalabs/ictt/TokenHome/NativeTokenHome.sol:NativeTokenHome \
   --constructor-args \
     0xF86Cb19Ad8405AEFa7d09C778215D2Cb6eBfB228 \
@@ -30,6 +31,7 @@ Receives bridged native tokens and makes them the native gas token of the destin
 forge create @avalabs/ictt/TokenRemote/NativeTokenRemote.sol:NativeTokenRemote \
   --constructor-args \
     "(0xF86Cb19Ad8405AEFa7d09C778215D2Cb6eBfB228,$ADMIN,$SOURCE_BLOCKCHAIN_ID,$NATIVE_TOKEN_HOME_ADDRESS,18)" \
+    # Use 0x7C43605E14F391720e1b37E49C78C4b03A488d98 for Mainnet C-Chain
     "MyToken" \
     "MTK" \
     1000000000000000000000000 \
