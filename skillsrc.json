@@ -1,0 +1,12 @@
+{
+  "version": "1",
+  "name": "avalanche-agent-skills",
+  "description": "AI agent skill packs for Avalanche L1 development — concepts, EVM, ICM, ICTT, and network operations",
+  "skills": [
+    { "name": "avalanche-concepts", "path": "./avalanche-concepts", "version": "0.1.0" },
+    { "name": "avalanche-evm",      "path": "./avalanche-evm",      "version": "0.1.0" },
+    { "name": "avalanche-icm",      "path": "./avalanche-icm",      "version": "0.1.0" },
+    { "name": "avalanche-ictt",     "path": "./avalanche-ictt",     "version": "0.1.0" },
+    { "name": "avalanche-network",  "path": "./avalanche-network",  "version": "0.1.0" }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "avalanche-agent-skills",
+  "version": "0.1.0",
+  "description": "Modular AI agent skill packs for Avalanche L1 development",
+  "keywords": ["avalanche", "agent-skills", "icm", "ictt", "l1", "subnet-evm"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/avalanche_agent_skills"
+  },
+  "scripts": {
+    "lint": "markdownlint '**/*.md' --ignore node_modules --ignore site"
+  },
+  "devDependencies": {
+    "markdownlint-cli": "^0.39.0"
+  }
+}
