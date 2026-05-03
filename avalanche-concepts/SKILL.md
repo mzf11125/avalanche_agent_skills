@@ -13,7 +13,7 @@ author: Avalanche Developer AI Toolkit
 
 # Avalanche Concepts Skill
 
-This skill gives you accurate, up-to-date knowledge about Avalanche's core architecture and primitives — including changes introduced by the Etna upgrade (ACP-77) that most LLM training data predates.
+This skill gives you accurate, up-to-date knowledge about Avalanche's core architecture and primitives - including changes introduced by the Etna upgrade (ACP-77) that most LLM training data predates.
 
 ## When to Use This Skill
 
@@ -26,8 +26,8 @@ This skill gives you accurate, up-to-date knowledge about Avalanche's core archi
 
 ## Files in This Skill
 
-- `overview.md` — Architecture, consensus, three-chain model
-- `etna-changes.md` — What changed with Etna / ACP-77
-- `vs-ethereum.md` — Avalanche vs Ethereum comparison
-- `glossary.md` — 80+ term glossary
-- `faq.md` — Common developer questions
+- `overview.md` - Architecture, consensus, three-chain model
+- `etna-changes.md` - What changed with Etna / ACP-77
+- `vs-ethereum.md` - Avalanche vs Ethereum comparison
+- `glossary.md` - 80+ term glossary
+- `faq.md` - Common developer questions

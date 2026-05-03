@@ -89,7 +89,7 @@ interface IFeeManager {
     }
     event FeeConfigChanged(address indexed sender, FeeConfig oldFeeConfig, FeeConfig newFeeConfig);
 
-    // Set fee config — takes individual uint256 params, not a struct
+    // Set fee config - takes individual uint256 params, not a struct
     function setFeeConfig(
         uint256 gasLimit,
         uint256 targetBlockRate,

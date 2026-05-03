@@ -115,4 +115,4 @@ The relayer account needs:
 
 ## AvaCloud Managed Relayer
 
-AvaCloud offers a managed relayer service — no infrastructure to run. Configure it in the AvaCloud console under your L1 settings.
+AvaCloud offers a managed relayer service - no infrastructure to run. Configure it in the AvaCloud console under your L1 settings.

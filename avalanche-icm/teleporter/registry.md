@@ -2,7 +2,7 @@
 
 ## What Is TeleporterRegistry?
 
-TeleporterRegistry tracks all deployed versions of the Teleporter contract. Instead of hardcoding the Teleporter address, use the registry to always get the latest version. This is important for upgrades — when a new Teleporter version is deployed, your contract automatically uses it.
+TeleporterRegistry tracks all deployed versions of the Teleporter contract. Instead of hardcoding the Teleporter address, use the registry to always get the latest version. This is important for upgrades - when a new Teleporter version is deployed, your contract automatically uses it.
 
 ## Address
 
@@ -12,7 +12,7 @@ TeleporterRegistry tracks all deployed versions of the Teleporter contract. Inst
 |---------|---------|
 | Mainnet C-Chain | `0x7C43605E14F391720e1b37E49C78C4b03A488d98` |
 | Fuji C-Chain | `0xF86Cb19Ad8405AEFa7d09C778215D2Cb6eBfB228` |
-| Custom L1s | Must be deployed separately — see [Deploy TeleporterRegistry to a Subnet](https://github.com/ava-labs/icm-services/blob/main/README.md#deploy-teleporter-to-a-subnet) |
+| Custom L1s | Must be deployed separately - see [Deploy TeleporterRegistry to a Subnet](https://github.com/ava-labs/icm-services/blob/main/README.md#deploy-teleporter-to-a-subnet) |
 
 ## Interface
 
@@ -56,7 +56,7 @@ contract MyApp is TeleporterRegistryApp {
         );
     }
 
-    // Implement receiver — TeleporterRegistryApp handles the msg.sender check
+    // Implement receiver - TeleporterRegistryApp handles the msg.sender check
     function _receiveTeleporterMessage(
         bytes32 sourceBlockchainID,
         address originSenderAddress,

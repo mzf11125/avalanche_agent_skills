@@ -14,7 +14,7 @@ author: Avalanche Developer AI Toolkit
 
 # Avalanche ICM Skill
 
-This skill provides accurate, complete knowledge about Avalanche's native cross-chain messaging system — ICM (Interchain Messaging), Teleporter, and AWM.
+This skill provides accurate, complete knowledge about Avalanche's native cross-chain messaging system - ICM (Interchain Messaging), Teleporter, and AWM.
 
 ## When to Use This Skill
 
@@ -28,18 +28,18 @@ This skill provides accurate, complete knowledge about Avalanche's native cross-
 
 ## Files in This Skill
 
-- `quick-start.md` — 15-min guide: send your first ICM message
-- `architecture.md` — AWM/Teleporter architecture and message lifecycle
-- `teleporter/sending.md` — How to send ICM messages
-- `teleporter/receiving.md` — How to receive ICM messages
-- `teleporter/overview.md` — Teleporter contract overview
-- `teleporter/registry.md` — TeleporterRegistry usage
-- `teleporter/fees.md` — Fee mechanics
-- `relayer/setup.md` — AWM relayer installation
-- `relayer/configuration.md` — Relayer config reference
-- `relayer/monitoring.md` — Relayer monitoring
-- `debugging.md` — Troubleshooting ICM failures
-- `security.md` — Security considerations
-- `reference/contract-addresses.md` — Official contract addresses
-- `reference/abi.md` — ITeleporterMessenger ABI
-- `examples/` — 5 working code examples
+- `quick-start.md` - 15-min guide: send your first ICM message
+- `architecture.md` - AWM/Teleporter architecture and message lifecycle
+- `teleporter/sending.md` - How to send ICM messages
+- `teleporter/receiving.md` - How to receive ICM messages
+- `teleporter/overview.md` - Teleporter contract overview
+- `teleporter/registry.md` - TeleporterRegistry usage
+- `teleporter/fees.md` - Fee mechanics
+- `relayer/setup.md` - AWM relayer installation
+- `relayer/configuration.md` - Relayer config reference
+- `relayer/monitoring.md` - Relayer monitoring
+- `debugging.md` - Troubleshooting ICM failures
+- `security.md` - Security considerations
+- `reference/contract-addresses.md` - Official contract addresses
+- `reference/abi.md` - ITeleporterMessenger ABI
+- `examples/` - 5 working code examples

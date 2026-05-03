@@ -130,7 +130,7 @@ function receiveTeleporterMessage(...) external override {
     try this._processMessage(message) {
         // success
     } catch {
-        // log failure but don't revert — message is consumed
+        // log failure but don't revert - message is consumed
         emit ProcessingFailed(message);
     }
 }

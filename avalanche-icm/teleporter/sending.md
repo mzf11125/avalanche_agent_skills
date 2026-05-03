@@ -14,7 +14,7 @@ Returns a `messageID` (bytes32) that uniquely identifies the message. Use this t
 
 | Field | Type | Description |
 |-------|------|-------------|
-| `destinationBlockchainID` | `bytes32` | The blockchain ID of the destination chain (not chain ID — see below) |
+| `destinationBlockchainID` | `bytes32` | The blockchain ID of the destination chain (not chain ID - see below) |
 | `destinationAddress` | `address` | The contract on the destination chain that will receive the message |
 | `feeInfo` | `TeleporterFeeInfo` | Fee paid to the relayer (use `{feeTokenAddress: address(0), amount: 0}` for zero fee) |
 | `requiredGasLimit` | `uint256` | Gas limit for the delivery transaction on the destination chain |

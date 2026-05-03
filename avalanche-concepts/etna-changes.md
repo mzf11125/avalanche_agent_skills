@@ -2,7 +2,7 @@
 
 ## What Is Etna?
 
-Etna is a major Avalanche network upgrade that activated in late 2024. Its most significant change — defined in **ACP-77** (Avalanche Community Proposal 77) — fundamentally changed how Avalanche L1 validators work, reducing the cost of running an L1 by ~99.9%.
+Etna is a major Avalanche network upgrade that activated in late 2024. Its most significant change - defined in **ACP-77** (Avalanche Community Proposal 77) - fundamentally changed how Avalanche L1 validators work, reducing the cost of running an L1 by ~99.9%.
 
 ## What ACP-77 Changed
 
@@ -48,7 +48,7 @@ Post-Etna, L1 validators are managed by on-chain contracts:
 ### PoS Validator Manager (Proof of Stake)
 
 - Validators stake the L1's native token
-- Permissionless — anyone with enough stake can become a validator
+- Permissionless - anyone with enough stake can become a validator
 - Supports delegation
 - Suitable for decentralized L1s
 
@@ -60,7 +60,7 @@ With Etna, Avalanche officially renamed "Subnets" to "Avalanche L1s":
 |----------|----------|
 | Subnet | Avalanche L1 |
 | Subnet validator | L1 validator |
-| Subnet-EVM | Subnet-EVM (unchanged — it's the VM name) |
+| Subnet-EVM | Subnet-EVM (unchanged - it's the VM name) |
 | Primary Network Subnet | Primary Network (unchanged) |
 
 The term "Subnet" still appears in older documentation, code, and tooling. They refer to the same concept.
@@ -83,7 +83,7 @@ Existing Subnets (pre-Etna) can migrate to the new model:
 3. Existing validators transition to the continuous fee model
 4. The 2,000 AVAX stake is unlocked and returned
 
-Migration is optional — existing Subnets continue to work under the old model until they choose to migrate.
+Migration is optional - existing Subnets continue to work under the old model until they choose to migrate.
 
 ## Impact on L1 Deployment Cost
 
@@ -93,4 +93,4 @@ Migration is optional — existing Subnets continue to work under the old model 
 | Monthly operational cost | Opportunity cost of locked AVAX | ~$50–200/month in fees |
 | Minimum viable L1 | 1 validator × 2,000 AVAX | 1 validator × continuous fee |
 
-This is why Retro9000 saw a surge in L1 projects after Etna — the economic barrier was essentially eliminated.
+This is why Retro9000 saw a surge in L1 projects after Etna - the economic barrier was essentially eliminated.

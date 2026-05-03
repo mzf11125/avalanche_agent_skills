@@ -68,9 +68,9 @@ Set up alerts for:
 - Check destination chain RPC is reachable
 
 **Signature aggregation failures:**
-- Validators may be offline — check validator uptime
-- P-Chain API may be unreachable — check `p-chain-api` config
-- Insufficient stake weight signing — need 67%+ of stake weight
+- Validators may be offline - check validator uptime
+- P-Chain API may be unreachable - check `p-chain-api` config
+- Insufficient stake weight signing - need 67%+ of stake weight
 
 ## Log Analysis
 

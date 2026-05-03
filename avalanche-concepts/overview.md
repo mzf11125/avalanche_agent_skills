@@ -2,22 +2,22 @@
 
 ## Avalanche Consensus
 
-Avalanche uses a novel family of consensus protocols — Snowball, Snowflake, and Snowman — that achieve sub-second probabilistic finality through repeated random sampling rather than leader-based block production.
+Avalanche uses a novel family of consensus protocols - Snowball, Snowflake, and Snowman - that achieve sub-second probabilistic finality through repeated random sampling rather than leader-based block production.
 
 ### How It Works
 
-1. **Snowball** — A binary decision protocol. A node repeatedly samples a small random subset of validators (k=20 by default) and adopts the majority preference. A "confidence counter" increments on consecutive same-preference rounds; once it exceeds a threshold β, the decision is finalized.
+1. **Snowball** - A binary decision protocol. A node repeatedly samples a small random subset of validators (k=20 by default) and adopts the majority preference. A "confidence counter" increments on consecutive same-preference rounds; once it exceeds a threshold β, the decision is finalized.
 
-2. **Snowflake** — Extends Snowball with a "conviction" mechanism. The counter resets if the preference ever flips, making the protocol more resistant to adversarial flipping attacks.
+2. **Snowflake** - Extends Snowball with a "conviction" mechanism. The counter resets if the preference ever flips, making the protocol more resistant to adversarial flipping attacks.
 
-3. **Snowman** — The linear-chain variant of Snowflake used for the C-Chain and P-Chain. Blocks are totally ordered; each block references its parent. Validators run Snowman to agree on the canonical chain tip.
+3. **Snowman** - The linear-chain variant of Snowflake used for the C-Chain and P-Chain. Blocks are totally ordered; each block references its parent. Validators run Snowman to agree on the canonical chain tip.
 
 ### Key Properties
 
 - **Sub-second finality**: Transactions finalize in ~1–2 seconds under normal conditions
 - **High throughput**: C-Chain sustains 4,500+ TPS
 - **Low energy**: No proof-of-work; validators are lightweight
-- **Leaderless**: No single block proposer — all validators participate simultaneously
+- **Leaderless**: No single block proposer - all validators participate simultaneously
 - **Sybil resistance**: Stake-weighted sampling (more stake = sampled more often)
 
 ## The Three-Chain Primary Network
@@ -26,7 +26,7 @@ Every Avalanche node validates the **Primary Network**, which consists of three 
 
 ### C-Chain (Contract Chain)
 
-- **VM**: Ethereum Virtual Machine (EVM) — fully compatible with Solidity, ethers.js, Hardhat, Foundry
+- **VM**: Ethereum Virtual Machine (EVM) - fully compatible with Solidity, ethers.js, Hardhat, Foundry
 - **Purpose**: Smart contract execution, DeFi, dApps
 - **Gas token**: AVAX
 - **Consensus**: Snowman (linear chain)
@@ -84,6 +84,6 @@ See `etna-changes.md` for full details.
 
 ## How Avalanche L1s Communicate
 
-Avalanche L1s communicate natively via **ICM (Interchain Messaging)**, built on **AWM (Avalanche Warp Messaging)**. This is a trust-minimized protocol where messages are signed by the source chain's validators — no external bridge operator required.
+Avalanche L1s communicate natively via **ICM (Interchain Messaging)**, built on **AWM (Avalanche Warp Messaging)**. This is a trust-minimized protocol where messages are signed by the source chain's validators - no external bridge operator required.
 
 See the `avalanche-icm` skill for full details.

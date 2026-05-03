@@ -2,7 +2,7 @@
 
 ## Overview
 
-ICM fees compensate relayers for the gas cost of delivering messages on the destination chain. Fees are optional — you can send zero-fee messages, but they may not be picked up by public relayers.
+ICM fees compensate relayers for the gas cost of delivering messages on the destination chain. Fees are optional - you can send zero-fee messages, but they may not be picked up by public relayers.
 
 ## Zero-Fee Messages (Testing / Private Relayer)
 

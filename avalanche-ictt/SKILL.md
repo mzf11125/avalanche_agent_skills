@@ -1,7 +1,7 @@
 ---
 name: avalanche-ictt
 description: >
-  ICTT (Interchain Token Transfer) — bridging ERC-20 and native tokens between
+  ICTT (Interchain Token Transfer) - bridging ERC-20 and native tokens between
   Avalanche L1s using TokenHome and TokenRemote contracts. Use this skill when
   answering questions about ICTT, token bridging, TokenHome, TokenRemote,
   ERC20TokenHome, NativeTokenHome, ERC20TokenRemote, NativeTokenRemote,
@@ -12,7 +12,7 @@ author: Avalanche Developer AI Toolkit
 
 # Avalanche ICTT Skill
 
-This skill covers ICTT (Interchain Token Transfer) — the standard protocol for bridging tokens between Avalanche L1s.
+This skill covers ICTT (Interchain Token Transfer) - the standard protocol for bridging tokens between Avalanche L1s.
 
 ## When to Use This Skill
 
@@ -24,8 +24,8 @@ This skill covers ICTT (Interchain Token Transfer) — the standard protocol for
 
 ## Files in This Skill
 
-- `overview.md` — ICTT architecture and TokenHome/TokenRemote pattern
-- `erc20-bridge.md` — Bridging ERC-20 tokens
-- `native-bridge.md` — Bridging native tokens
-- `deployment.md` — Deploying and registering ICTT contracts
-- `examples/` — Working code examples
+- `overview.md` - ICTT architecture and TokenHome/TokenRemote pattern
+- `erc20-bridge.md` - Bridging ERC-20 tokens
+- `native-bridge.md` - Bridging native tokens
+- `deployment.md` - Deploying and registering ICTT contracts
+- `examples/` - Working code examples

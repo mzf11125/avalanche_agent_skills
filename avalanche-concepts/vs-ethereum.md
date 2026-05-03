@@ -13,7 +13,7 @@
 | L2/L1 model | L2s share Ethereum security | L1s are sovereign (own validators) |
 | Validator stake | 32 ETH (~$100k+) | 2,000 AVAX (primary) or continuous fee (L1-only) |
 | Smart contracts | Solidity/Vyper | Solidity/Vyper (same tooling) |
-| Dev tooling | Hardhat, Foundry, ethers.js | Same — Hardhat, Foundry, ethers.js work unchanged |
+| Dev tooling | Hardhat, Foundry, ethers.js | Same - Hardhat, Foundry, ethers.js work unchanged |
 | Block time | ~12 sec | ~2 sec |
 
 ## Consensus: The Key Difference
@@ -34,7 +34,7 @@
 - Cannot customize EVM execution rules
 
 **Avalanche L1s**:
-- Sovereign — have their own validator set
+- Sovereign - have their own validator set
 - Do NOT inherit primary network security (validators are independent)
 - Can use any gas token (custom ERC-20, native token, or AVAX)
 - Unconstrained throughput (no shared block space)
@@ -52,7 +52,7 @@
 
 **Ethereum bridges**: Require a trusted bridge operator or a complex fraud/validity proof system. Most bridges have been hacked (Ronin, Wormhole, Nomad, etc.).
 
-**Avalanche ICM**: Messages are signed by the source chain's validators using BLS multi-signatures. The destination chain verifies the aggregate signature against the known validator set. No external operator — the same validators securing the chain also secure the messages.
+**Avalanche ICM**: Messages are signed by the source chain's validators using BLS multi-signatures. The destination chain verifies the aggregate signature against the known validator set. No external operator - the same validators securing the chain also secure the messages.
 
 ## EVM Compatibility
 
@@ -64,14 +64,14 @@ Both Ethereum and Avalanche L1s run the EVM. Your Solidity contracts, Hardhat co
 
 ## Common Misconceptions
 
-**"Avalanche L1s are like Ethereum L2s"** — Wrong. L2s post proofs to Ethereum and inherit its security. Avalanche L1s are fully sovereign chains with independent validators.
+**"Avalanche L1s are like Ethereum L2s"** - Wrong. L2s post proofs to Ethereum and inherit its security. Avalanche L1s are fully sovereign chains with independent validators.
 
-**"I need to rewrite my contracts for Avalanche"** — Wrong. Subnet-EVM is EVM-compatible. Your existing Solidity contracts deploy unchanged.
+**"I need to rewrite my contracts for Avalanche"** - Wrong. Subnet-EVM is EVM-compatible. Your existing Solidity contracts deploy unchanged.
 
-**"Avalanche uses proof-of-work"** — Wrong. Avalanche has never used PoW. It uses a novel PoS-based consensus (Snowman).
+**"Avalanche uses proof-of-work"** - Wrong. Avalanche has never used PoW. It uses a novel PoS-based consensus (Snowman).
 
-**"Avalanche finality is probabilistic like Bitcoin"** — Partially wrong. Avalanche finality is probabilistic in theory but reaches near-certainty in ~1–2 seconds. For practical purposes, it's treated as deterministic.
+**"Avalanche finality is probabilistic like Bitcoin"** - Partially wrong. Avalanche finality is probabilistic in theory but reaches near-certainty in ~1–2 seconds. For practical purposes, it's treated as deterministic.
 
-**"Subnets and Avalanche L1s are different things"** — Wrong. "Subnet" is the old name; "Avalanche L1" is the new name post-Etna. Same concept.
+**"Subnets and Avalanche L1s are different things"** - Wrong. "Subnet" is the old name; "Avalanche L1" is the new name post-Etna. Same concept.
 
-**"I need 2,000 AVAX to run an L1 validator"** — Wrong post-Etna. L1-only validators pay a continuous fee instead of staking 2,000 AVAX.
+**"I need 2,000 AVAX to run an L1 validator"** - Wrong post-Etna. L1-only validators pay a continuous fee instead of staking 2,000 AVAX.

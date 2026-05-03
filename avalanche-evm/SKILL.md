@@ -12,7 +12,7 @@ author: Avalanche Developer AI Toolkit
 
 # Avalanche EVM Skill
 
-This skill covers Subnet-EVM — the EVM implementation used by Avalanche L1s — including configuration, precompiles, and development tooling.
+This skill covers Subnet-EVM - the EVM implementation used by Avalanche L1s - including configuration, precompiles, and development tooling.
 
 ## When to Use This Skill
 
@@ -25,10 +25,10 @@ This skill covers Subnet-EVM — the EVM implementation used by Avalanche L1s �
 
 ## Files in This Skill
 
-- `overview.md` — Subnet-EVM overview and key differences from Ethereum
-- `genesis.md` — genesis.json configuration reference
-- `precompiles.md` — Built-in precompiles (AllowList, FeeManager, NativeMinter, etc.)
-- `hardhat.md` — Hardhat setup and configuration for Avalanche
-- `foundry.md` — Foundry setup and configuration for Avalanche
-- `fee-config.md` — Custom fee token and gas price configuration
-- `examples/` — Code examples
+- `overview.md` - Subnet-EVM overview and key differences from Ethereum
+- `genesis.md` - genesis.json configuration reference
+- `precompiles.md` - Built-in precompiles (AllowList, FeeManager, NativeMinter, etc.)
+- `hardhat.md` - Hardhat setup and configuration for Avalanche
+- `foundry.md` - Foundry setup and configuration for Avalanche
+- `fee-config.md` - Custom fee token and gas price configuration
+- `examples/` - Code examples

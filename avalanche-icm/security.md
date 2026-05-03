@@ -17,7 +17,7 @@ function receiveTeleporterMessage(
 
 Without this, anyone can call your function with arbitrary data.
 
-If using `TeleporterRegistryApp`, the base class handles this — but you must still call `super` or use `_receiveTeleporterMessage`.
+If using `TeleporterRegistryApp`, the base class handles this - but you must still call `super` or use `_receiveTeleporterMessage`.
 
 ## 2. Validate Source Chain and Sender
 
@@ -41,7 +41,7 @@ function receiveTeleporterMessage(
 
 ## 3. Replay Protection
 
-Teleporter assigns each message a unique nonce. The Teleporter contract itself prevents replay — you don't need to implement this yourself. Each `messageID` can only be delivered once.
+Teleporter assigns each message a unique nonce. The Teleporter contract itself prevents replay - you don't need to implement this yourself. Each `messageID` can only be delivered once.
 
 ## 4. Reentrancy
 
@@ -79,7 +79,7 @@ Ensure sender and receiver use identical struct definitions. A mismatch causes s
 
 ## 7. Fee Token Approval
 
-When paying fees, only approve the exact amount needed — not `type(uint256).max`:
+When paying fees, only approve the exact amount needed - not `type(uint256).max`:
 
 ```solidity
 IERC20(feeToken).approve(TELEPORTER_ADDRESS, feeAmount); // exact amount

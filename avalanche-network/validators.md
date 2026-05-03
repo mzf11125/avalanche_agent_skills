@@ -157,11 +157,11 @@ avalanchego --track-subnets=YOUR_SUBNET_ID
 ## Staking Keys
 
 AvalancheGo generates staking keys on first run at `~/.avalanchego/staking/`:
-- `staker.crt` — TLS certificate
-- `staker.key` — TLS private key
-- `signer.key` — BLS signing key (used for Warp/ICM)
+- `staker.crt` - TLS certificate
+- `staker.key` - TLS private key
+- `signer.key` - BLS signing key (used for Warp/ICM)
 
-**Back these up.** Losing them means losing your node identity. You do not need AVAX funds on your validating node — keep most funds in cold storage.
+**Back these up.** Losing them means losing your node identity. You do not need AVAX funds on your validating node - keep most funds in cold storage.
 
 ## Checking Validator Status
 

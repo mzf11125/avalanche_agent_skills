@@ -2,7 +2,7 @@
 
 Execute governance decisions from a hub chain on spoke chains via ICM.
 
-## GovernanceHub (source chain — where votes happen)
+## GovernanceHub (source chain - where votes happen)
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -60,7 +60,7 @@ contract GovernanceHub {
 }
 ```
 
-## GovernanceExecutor (destination chain — where actions happen)
+## GovernanceExecutor (destination chain - where actions happen)
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -101,7 +101,7 @@ contract GovernanceExecutor is ITeleporterReceiver {
         emit GovernanceActionExecuted(sourceBlockchainID, message);
     }
 
-    // Governed functions — only callable via ICM from hub
+    // Governed functions - only callable via ICM from hub
     function setProtocolFee(uint256 newFee) external {
         require(msg.sender == address(this), "Only via governance");
         protocolFee = newFee;

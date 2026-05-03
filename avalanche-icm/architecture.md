@@ -4,8 +4,8 @@
 
 Avalanche ICM (Interchain Messaging) is a native cross-chain communication protocol. It has two layers:
 
-1. **AWM (Avalanche Warp Messaging)** — the low-level protocol built into Subnet-EVM
-2. **Teleporter** — the high-level developer SDK built on top of AWM
+1. **AWM (Avalanche Warp Messaging)** - the low-level protocol built into Subnet-EVM
+2. **Teleporter** - the high-level developer SDK built on top of AWM
 
 ## AWM: The Low-Level Protocol
 
@@ -24,7 +24,7 @@ AWM uses BLS (Boneh–Lynn–Shacham) multi-signatures. Every Avalanche validato
 
 ### Trust Model
 
-AWM is **trust-minimized**: the same validators securing Chain A also sign its outgoing messages. There is no external bridge operator. An attacker would need to compromise 67%+ of Chain A's stake weight to forge a message — the same threshold needed to attack the chain itself.
+AWM is **trust-minimized**: the same validators securing Chain A also sign its outgoing messages. There is no external bridge operator. An attacker would need to compromise 67%+ of Chain A's stake weight to forge a message - the same threshold needed to attack the chain itself.
 
 This is fundamentally different from traditional bridges, which rely on a separate multisig or committee.
 

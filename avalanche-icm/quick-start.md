@@ -202,7 +202,7 @@ async function main() {
     console.log("Waiting for delivery...");
     await new Promise(r => setTimeout(r, 5000));
   }
-  console.log("Timeout — check relayer logs");
+  console.log("Timeout - check relayer logs");
 }
 main();
 ```

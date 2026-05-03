@@ -18,7 +18,7 @@ Same address on all Subnet-EVM chains (mainnet and Fuji):
 | Fuji C-Chain | `0xF86Cb19Ad8405AEFa7d09C778215D2Cb6eBfB228` |
 | Custom L1s | Must be deployed separately |
 
-## WAVAX (Wrapped AVAX) — Fee Token
+## WAVAX (Wrapped AVAX) - Fee Token
 
 | Network | Address |
 |---------|---------|
@@ -32,7 +32,7 @@ Same address on all Subnet-EVM chains (mainnet and Fuji):
 | Mainnet | `2q9e4r6Mu3U68nU1fYjgbR6JvwrRx36CohpAX5UQxse55x1Q5` | `0x9f3be606497285d0ffbb5ac9ba24aa60346a9b1812479ed66cb329f394a4b1c7` |
 | Fuji | `yH8D7ThNJkxmtkuv2jgBa4P1Rn3Qpr4muVULEqberX5drBMCm` | `0x7fc93d85c6d62be589f5f8f4f0e7e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5` |
 
-> **Note**: Always verify blockchain IDs from the official AvalancheGo API — they are derived from genesis hashes and are chain-specific.
+> **Note**: Always verify blockchain IDs from the official AvalancheGo API - they are derived from genesis hashes and are chain-specific.
 
 ## Verifying Addresses On-Chain
 

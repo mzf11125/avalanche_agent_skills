@@ -72,7 +72,7 @@ forge create @avalabs/ictt/TokenRemote/ERC20TokenRemote.sol:ERC20TokenRemote \
 After deploying both contracts, register the remote:
 
 ```bash
-# Call registerWithHome() on the TokenRemote — sends an ICM message to TokenHome
+# Call registerWithHome() on the TokenRemote - sends an ICM message to TokenHome
 cast send $TOKEN_REMOTE_ADDRESS \
   "registerWithHome((address,uint256))" \
   "(address(0),0)" \

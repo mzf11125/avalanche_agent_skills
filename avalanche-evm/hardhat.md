@@ -69,7 +69,7 @@ npx hardhat run scripts/deploy.ts --network myL1
 ```bash
 npm install --save-dev @nomicfoundation/hardhat-verify
 
-# hardhat.config.ts — add etherscan config:
+# hardhat.config.ts - add etherscan config:
 etherscan: {
   apiKey: {
     avalancheFujiTestnet: "snowtrace",  // no key needed

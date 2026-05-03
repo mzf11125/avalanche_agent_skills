@@ -5,7 +5,7 @@
 **Version:** 1.0  
 **Status:** Draft  
 **Author:** [Your Name]  
-**Program Target:** Retro9000 — Avalanche L1 & Infrastructure Tooling Round  
+**Program Target:** Retro9000 - Avalanche L1 & Infrastructure Tooling Round  
 **Next Snapshot Deadline:** July 14, 2026
 
 ---
@@ -17,8 +17,8 @@
 3. [Vision & Goals](#3-vision--goals)
 4. [Target Users](#4-target-users)
 5. [Success Metrics](#5-success-metrics)
-6. [Product 1 — `avalanche_agent_skills`](#6-product-1--avalanche_agent_skills)
-7. [Product 2 — `avalanche-mcp-server`](#7-product-2--avalanche-mcp-server)
+6. [Product 1 - `avalanche_agent_skills`](#6-product-1--avalanche_agent_skills)
+7. [Product 2 - `avalanche-mcp-server`](#7-product-2--avalanche-mcp-server)
 8. [Technical Architecture](#8-technical-architecture)
 9. [Retro9000 Alignment](#9-retro9000-alignment)
 10. [Roadmap](#10-roadmap)
@@ -31,9 +31,9 @@
 
 The **Avalanche Developer AI Toolkit** is a two-layer open-source project that makes building on Avalanche L1s dramatically easier for developers using AI-assisted workflows.
 
-**Layer 1 — `avalanche_agent_skills`:** A modular set of installable agent skill packs (compatible with Claude, Cursor, Windsurf, and any tool supporting the Agent Skills open standard) covering Avalanche L1 concepts, EVM development, Interchain Messaging (ICM), Interchain Token Transfer (ICTT), and network/validator operations.
+**Layer 1 - `avalanche_agent_skills`:** A modular set of installable agent skill packs (compatible with Claude, Cursor, Windsurf, and any tool supporting the Agent Skills open standard) covering Avalanche L1 concepts, EVM development, Interchain Messaging (ICM), Interchain Token Transfer (ICTT), and network/validator operations.
 
-**Layer 2 — `avalanche-mcp-server`:** A Model Context Protocol (MCP) server that gives AI agents the ability to query live Avalanche network data, inspect ICM messages, check validator health, and scaffold L1 deployments — directly from within any MCP-compatible development environment.
+**Layer 2 - `avalanche-mcp-server`:** A Model Context Protocol (MCP) server that gives AI agents the ability to query live Avalanche network data, inspect ICM messages, check validator health, and scaffold L1 deployments - directly from within any MCP-compatible development environment.
 
 Together, these tools create the AI-native developer layer for the Avalanche ecosystem. Any developer using an AI coding assistant can now understand, query, and build on Avalanche L1s without leaving their tool.
 
@@ -49,13 +49,13 @@ Specifically:
 
 - **AI assistants are blind to Avalanche-specific primitives.** When a developer asks Claude or Cursor how to use ICM or deploy an Avalanche L1, the model either hallucinates, falls back to generic EVM advice, or produces outdated information. The Etna upgrade and ACP-77 are recent enough that most LLM training data predates them.
 
-- **There is no live data layer for AI agents.** Avalanche's Builder Hub provides AI-friendly static documentation endpoints, but no MCP server exists that lets an agent *query the live network* — validator status, cross-chain messages, L1 metrics — in real time.
+- **There is no live data layer for AI agents.** Avalanche's Builder Hub provides AI-friendly static documentation endpoints, but no MCP server exists that lets an agent *query the live network* - validator status, cross-chain messages, L1 metrics - in real time.
 
-- **Tooling context is scattered.** AvalancheGo, Subnet-EVM, AvaCloud, AWM relayer, ICM, ICTT, Teleporter — each has its own docs, SDKs, and deployment patterns. No unified agent context exists that covers the full stack.
+- **Tooling context is scattered.** AvalancheGo, Subnet-EVM, AvaCloud, AWM relayer, ICM, ICTT, Teleporter - each has its own docs, SDKs, and deployment patterns. No unified agent context exists that covers the full stack.
 
 ### Why This Matters for Retro9000
 
-Retro9000 is funding the builders of Avalanche L1s. Every team that submits a project first has to figure out how to build on Avalanche. The harder that onboarding is, the fewer projects ship — and the fewer projects ship, the smaller the ecosystem. This toolkit reduces friction for every L1 builder in the program.
+Retro9000 is funding the builders of Avalanche L1s. Every team that submits a project first has to figure out how to build on Avalanche. The harder that onboarding is, the fewer projects ship - and the fewer projects ship, the smaller the ecosystem. This toolkit reduces friction for every L1 builder in the program.
 
 ---
 
@@ -65,13 +65,13 @@ Retro9000 is funding the builders of Avalanche L1s. Every team that submits a pr
 
 ### Goals
 
-**G1 — Reduce AI hallucination for Avalanche-specific code.** Developers who install `avalanche_agent_skills` should be able to write correct ICM, ICTT, and Subnet-EVM code in their AI assistant on the first attempt.
+**G1 - Reduce AI hallucination for Avalanche-specific code.** Developers who install `avalanche_agent_skills` should be able to write correct ICM, ICTT, and Subnet-EVM code in their AI assistant on the first attempt.
 
-**G2 — Give AI agents live Avalanche network access.** Developers who run `avalanche-mcp-server` should be able to ask their AI agent questions like "what's the ICM message volume between my L1 and C-Chain today?" and get a real answer.
+**G2 - Give AI agents live Avalanche network access.** Developers who run `avalanche-mcp-server` should be able to ask their AI agent questions like "what's the ICM message volume between my L1 and C-Chain today?" and get a real answer.
 
-**G3 — Explicitly support ICM and ICTT.** These are Avalanche-native protocols that Retro9000 explicitly preferences in its evaluation criteria. Both products are designed around them.
+**G3 - Explicitly support ICM and ICTT.** These are Avalanche-native protocols that Retro9000 explicitly preferences in its evaluation criteria. Both products are designed around them.
 
-**G4 — Be the default AI layer for Avalanche L1 builders.** Within six months of launch, this toolkit should be referenced in Avalanche Discord, Avalanche Academy, and the Builder Hub docs.
+**G4 - Be the default AI layer for Avalanche L1 builders.** Within six months of launch, this toolkit should be referenced in Avalanche Discord, Avalanche Academy, and the Builder Hub docs.
 
 ---
 
@@ -79,7 +79,7 @@ Retro9000 is funding the builders of Avalanche L1s. Every team that submits a pr
 
 ### Primary: Avalanche L1 Builders
 
-Developers who are building or operating an Avalanche L1 — whether through Retro9000 or otherwise. They are:
+Developers who are building or operating an Avalanche L1 - whether through Retro9000 or otherwise. They are:
 - Familiar with EVM/Solidity but new to Avalanche-specific tooling
 - Using AI coding assistants daily (Claude, Cursor, Windsurf, GitHub Copilot)
 - Struggling to get useful answers from LLMs about ICM, Subnet-EVM customization, and AvalancheGo node setup
@@ -96,13 +96,13 @@ Developers building on existing Avalanche L1s (not deploying their own) who need
 
 ## 5. Success Metrics
 
-### Adoption Metrics (Primary — measured at Retro9000 snapshot)
+### Adoption Metrics (Primary - measured at Retro9000 snapshot)
 
 | Metric | Target (July 14 Snapshot) |
 |--------|--------------------------|
-| GitHub stars — agent skills | ≥ 100 |
-| GitHub stars — MCP server | ≥ 50 |
-| NPM installs — MCP server | ≥ 200 |
+| GitHub stars - agent skills | ≥ 100 |
+| GitHub stars - MCP server | ≥ 50 |
+| NPM installs - MCP server | ≥ 200 |
 | `npx skills add` installs | ≥ 300 |
 | Retro9000 community votes | Top 10 tooling projects |
 
@@ -125,7 +125,7 @@ Developers building on existing Avalanche L1s (not deploying their own) who need
 
 ---
 
-## 6. Product 1 — `avalanche_agent_skills`
+## 6. Product 1 - `avalanche_agent_skills`
 
 ### 6.1 Overview
 
@@ -232,7 +232,7 @@ avalanche-evm/
 
 #### Skill 3: `avalanche-icm` ⭐ (Priority Skill)
 
-**Purpose:** Complete guide to Avalanche Interchain Messaging (ICM) — the native cross-chain communication protocol. This is the highest-priority skill because Retro9000 explicitly preferences ICM integration.
+**Purpose:** Complete guide to Avalanche Interchain Messaging (ICM) - the native cross-chain communication protocol. This is the highest-priority skill because Retro9000 explicitly preferences ICM integration.
 
 **Key Topics:**
 - ICM architecture and Warp messaging
@@ -285,7 +285,7 @@ avalanche-icm/
 
 #### Skill 4: `avalanche-ictt` ⭐ (Priority Skill)
 
-**Purpose:** Complete guide to Avalanche Interchain Token Transfer (ICTT) — the native cross-chain token bridge. Also explicitly preferred by Retro9000.
+**Purpose:** Complete guide to Avalanche Interchain Token Transfer (ICTT) - the native cross-chain token bridge. Also explicitly preferred by Retro9000.
 
 **Key Topics:**
 - ICTT architecture and token flow
@@ -416,7 +416,7 @@ avalanche_agent_skills/
 
 ---
 
-## 7. Product 2 — `avalanche-mcp-server`
+## 7. Product 2 - `avalanche-mcp-server`
 
 ### 7.1 Overview
 
@@ -869,17 +869,17 @@ Check the operational status of AvaCloud services.
 The server reads from environment variables with sensible defaults. All tools work without any API key using public endpoints, with higher rate limits available via AvaCloud.
 
 ```env
-# Optional — enables higher rate limits and additional data
+# Optional - enables higher rate limits and additional data
 AVACLOUD_API_KEY=
 
-# Optional — override default RPC endpoints
+# Optional - override default RPC endpoints
 AVAX_MAINNET_RPC=https://api.avax.network/ext/bc/C/rpc
 AVAX_FUJI_RPC=https://api.avax-test.network/ext/bc/C/rpc
 
-# Optional — default network (default: mainnet)
+# Optional - default network (default: mainnet)
 DEFAULT_NETWORK=mainnet
 
-# Optional — request timeout in ms (default: 10000)
+# Optional - request timeout in ms (default: 10000)
 REQUEST_TIMEOUT_MS=10000
 ```
 
@@ -1035,21 +1035,21 @@ Developer's AI Tool (Claude / Cursor / any MCP client)
 | Ecosystem relevance | Directly lowers L1 builder onboarding friction |
 | Technical merit | Live MCP tools querying real network data; comprehensive skill coverage |
 | Community engagement | Retro9000 votes; Avalanche Discord presence; builder testimonials |
-| ICM/ICTT integration | 2 dedicated skill modules + 5 ICM/ICTT MCP tools — maximum emphasis |
+| ICM/ICTT integration | 2 dedicated skill modules + 5 ICM/ICTT MCP tools - maximum emphasis |
 
 ### 9.3 Submission Narrative
 
-> The Avalanche Developer AI Toolkit is the missing AI-native layer for Avalanche L1 builders. Every developer building a Retro9000 project who uses an AI coding assistant now has access to accurate, up-to-date Avalanche knowledge and live network data — directly in their tool. We built this because we saw Avalanche L1 teams wasting hours debugging hallucinated ICM code. No more.
+> The Avalanche Developer AI Toolkit is the missing AI-native layer for Avalanche L1 builders. Every developer building a Retro9000 project who uses an AI coding assistant now has access to accurate, up-to-date Avalanche knowledge and live network data - directly in their tool. We built this because we saw Avalanche L1 teams wasting hours debugging hallucinated ICM code. No more.
 
 ---
 
 ## 10. Roadmap
 
-### Phase 1 — Foundation (Weeks 1–3)
+### Phase 1 - Foundation (Weeks 1–3)
 
 **`avalanche_agent_skills` v0.1**
-- [ ] `avalanche-concepts` skill — complete
-- [ ] `avalanche-icm` skill — complete (priority)
+- [ ] `avalanche-concepts` skill - complete
+- [ ] `avalanche-icm` skill - complete (priority)
 - [ ] Repository structure, LICENSE, CONTRIBUTING.md
 - [ ] GitHub Actions for linting/validation
 - [ ] Submit to Retro9000 early for community votes
@@ -1069,12 +1069,12 @@ Developer's AI Tool (Claude / Cursor / any MCP client)
 
 ---
 
-### Phase 2 — Expansion (Weeks 4–6)
+### Phase 2 - Expansion (Weeks 4–6)
 
 **`avalanche_agent_skills` v0.2**
-- [ ] `avalanche-evm` skill — complete
-- [ ] `avalanche-ictt` skill — complete (priority)
-- [ ] `avalanche-network` skill — complete
+- [ ] `avalanche-evm` skill - complete
+- [ ] `avalanche-ictt` skill - complete (priority)
+- [ ] `avalanche-network` skill - complete
 - [ ] CHANGELOG and versioning
 
 **`avalanche-mcp-server` v0.2**
@@ -1087,7 +1087,7 @@ Developer's AI Tool (Claude / Cursor / any MCP client)
 
 ---
 
-### Phase 3 — Polish & Growth (Weeks 7–10)
+### Phase 3 - Polish & Growth (Weeks 7–10)
 
 **Both products**
 - [ ] `scaffold_l1_deployment` tool (MCP)
@@ -1118,8 +1118,8 @@ Both repositories are released under the **MIT License**.
 **Governance:** Initially maintained by the founding team. CONTRIBUTING.md will define the PR process, issue labels, and versioning scheme (semver). External contributions welcome from Day 1.
 
 **Publishing:**
-- `avalanche_agent_skills` — GitHub only (consumed via `npx skills add`)
-- `avalanche-mcp-server` — GitHub + npm (`avalanche-mcp-server`)
+- `avalanche_agent_skills` - GitHub only (consumed via `npx skills add`)
+- `avalanche-mcp-server` - GitHub + npm (`avalanche-mcp-server`)
 
 ---
 
@@ -1127,13 +1127,13 @@ Both repositories are released under the **MIT License**.
 
 The following are explicitly not in scope for v1 and the Retro9000 submission:
 
-- **A web UI or dashboard** — this is a developer tool; no frontend
-- **Wallet or key management** — the MCP server is read-only + scaffold-only; no signing
-- **Support for non-Avalanche chains** — the product is Avalanche-only; no multi-chain abstraction
-- **Custom VM (not Subnet-EVM) development guides** — Subnet-EVM covers the vast majority of L1s
-- **Paid or freemium tiers** — fully free and open-source for the Retro9000 period
-- **Mobile** — developer tooling; desktop/CLI only
-- **GraphQL or REST API wrapping** — the MCP server is MCP-only; no separate HTTP API
+- **A web UI or dashboard** - this is a developer tool; no frontend
+- **Wallet or key management** - the MCP server is read-only + scaffold-only; no signing
+- **Support for non-Avalanche chains** - the product is Avalanche-only; no multi-chain abstraction
+- **Custom VM (not Subnet-EVM) development guides** - Subnet-EVM covers the vast majority of L1s
+- **Paid or freemium tiers** - fully free and open-source for the Retro9000 period
+- **Mobile** - developer tooling; desktop/CLI only
+- **GraphQL or REST API wrapping** - the MCP server is MCP-only; no separate HTTP API
 
 ---
 

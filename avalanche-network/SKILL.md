@@ -12,7 +12,7 @@ author: Avalanche Developer AI Toolkit
 
 # Avalanche Network Skill
 
-This skill covers running and operating Avalanche network infrastructure — AvalancheGo nodes, validators, and monitoring.
+This skill covers running and operating Avalanche network infrastructure - AvalancheGo nodes, validators, and monitoring.
 
 ## When to Use This Skill
 
@@ -25,8 +25,8 @@ This skill covers running and operating Avalanche network infrastructure — Ava
 
 ## Files in This Skill
 
-- `avalanchego.md` — AvalancheGo installation and configuration
-- `validators.md` — Validator setup for Avalanche L1s
-- `docker.md` — Docker and Docker Compose setup
-- `monitoring.md` — Prometheus and Grafana monitoring
-- `api.md` — AvalancheGo API reference
+- `avalanchego.md` - AvalancheGo installation and configuration
+- `validators.md` - Validator setup for Avalanche L1s
+- `docker.md` - Docker and Docker Compose setup
+- `monitoring.md` - Prometheus and Grafana monitoring
+- `api.md` - AvalancheGo API reference

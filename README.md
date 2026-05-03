@@ -1,9 +1,9 @@
-# Avalanche Developer AI Toolkit — `avalanche_agent_skills`
+# Avalanche Developer AI Toolkit - `avalanche_agent_skills`
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Retro9000](https://img.shields.io/badge/Retro9000-Tooling-red)](https://retro9000.avax.network)
 
-Modular AI agent skill packs that make building on Avalanche L1s dramatically easier for developers using AI-assisted workflows. Install once — your AI assistant becomes an Avalanche expert.
+Modular AI agent skill packs that make building on Avalanche L1s dramatically easier for developers using AI-assisted workflows. Install once - your AI assistant becomes an Avalanche expert.
 
 ## Quick Install
 
@@ -34,18 +34,18 @@ npx skills add https://github.com/your-username/avalanche_agent_skills --skill a
 ## MCP Server
 
 For live Avalanche network data in your AI agent, see the companion project:
-**[avalanche-mcp-server](https://github.com/your-username/avalanche-mcp-server)** — 13 MCP tools for querying L1 stats, ICM messages, ICTT transfers, and more.
+**[avalanche-mcp-server](https://github.com/your-username/avalanche-mcp-server)** - 13 MCP tools for querying L1 stats, ICM messages, ICTT transfers, and more.
 
 ## What Problems This Solves
 
-- **AI hallucination on Avalanche code** — LLMs trained before Etna produce wrong ICM/ICTT code. These skills inject accurate, up-to-date context.
-- **Scattered tooling docs** — AvalancheGo, Subnet-EVM, Teleporter, ICTT, AWM relayer all in one place.
-- **No AI-native onboarding** — Developers can now ask their AI assistant Avalanche questions and get correct answers on the first try.
+- **AI hallucination on Avalanche code** - LLMs trained before Etna produce wrong ICM/ICTT code. These skills inject accurate, up-to-date context.
+- **Scattered tooling docs** - AvalancheGo, Subnet-EVM, Teleporter, ICTT, AWM relayer all in one place.
+- **No AI-native onboarding** - Developers can now ask their AI assistant Avalanche questions and get correct answers on the first try.
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md). PRs welcome — especially additional code examples and coverage of new Avalanche features.
+See [CONTRIBUTING.md](CONTRIBUTING.md). PRs welcome - especially additional code examples and coverage of new Avalanche features.
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT - see [LICENSE](LICENSE).

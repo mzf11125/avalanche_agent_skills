@@ -73,7 +73,7 @@ Use ICTT (Interchain Token Transfer). Deploy an `ERC20TokenHome` on the source c
 
 **Q: How is Avalanche different from Polygon/Arbitrum/Optimism?**
 
-Polygon, Arbitrum, and Optimism are Ethereum L2s — they post proofs to Ethereum and inherit its security. Avalanche L1s are sovereign chains with independent validators. Key differences:
+Polygon, Arbitrum, and Optimism are Ethereum L2s - they post proofs to Ethereum and inherit its security. Avalanche L1s are sovereign chains with independent validators. Key differences:
 - Avalanche L1s don't inherit Ethereum security (pro: sovereignty; con: must bootstrap your own validator set)
 - Avalanche L1s can have custom gas tokens; L2s use ETH
 - Avalanche L1s have sub-second finality; L2s have Ethereum's finality (~12 min)
@@ -136,12 +136,12 @@ The AWM relayer is an off-chain service that monitors source chains for outgoing
 
 **Q: What precompiles does Subnet-EVM support?**
 
-- `ContractDeployerAllowList` (`0x0200000000000000000000000000000000000000`) — restrict contract deployment
-- `TxAllowList` (`0x0200000000000000000000000000000000000002`) — restrict transaction senders
-- `NativeAssetBalance` (`0x0100000000000000000000000000000000000001`) — query native token balances
-- `NativeAssetCall` (`0x0100000000000000000000000000000000000002`) — call contracts with native value
-- `FeeManager` (`0x0200000000000000000000000000000000000003`) — dynamic fee configuration
-- `WarpMessenger` (`0x0200000000000000000000000000000000000005`) — low-level Warp messaging
+- `ContractDeployerAllowList` (`0x0200000000000000000000000000000000000000`) - restrict contract deployment
+- `TxAllowList` (`0x0200000000000000000000000000000000000002`) - restrict transaction senders
+- `NativeAssetBalance` (`0x0100000000000000000000000000000000000001`) - query native token balances
+- `NativeAssetCall` (`0x0100000000000000000000000000000000000002`) - call contracts with native value
+- `FeeManager` (`0x0200000000000000000000000000000000000003`) - dynamic fee configuration
+- `WarpMessenger` (`0x0200000000000000000000000000000000000005`) - low-level Warp messaging
 
 See the `avalanche-evm` skill for full precompile documentation.
 

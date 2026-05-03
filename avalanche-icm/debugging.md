@@ -36,7 +36,7 @@ wscat -c wss://your-rpc/ext/bc/CHAIN/ws
 **Cause 1**: `requiredGasLimit` too low.
 **Fix**: Increase `requiredGasLimit` in `sendCrossChainMessage`. Estimate gas by calling the function locally.
 
-**Cause 2**: Missing `require(msg.sender == TELEPORTER)` check — wait, if this is missing, the function would succeed but be callable by anyone. If it's present and wrong address, it reverts.
+**Cause 2**: Missing `require(msg.sender == TELEPORTER)` check - wait, if this is missing, the function would succeed but be callable by anyone. If it's present and wrong address, it reverts.
 **Fix**: Verify `TELEPORTER` constant matches `0x253b2784c75e510dD0fF1da844684a1aC0aa5fcf`.
 
 **Cause 3**: Logic error in `receiveTeleporterMessage`.
@@ -94,7 +94,7 @@ feeInfo: TeleporterFeeInfo({
 // Sender
 bytes memory payload = abi.encode(myStruct);
 
-// Receiver — must use the SAME struct type
+// Receiver - must use the SAME struct type
 MyStruct memory decoded = abi.decode(message, (MyStruct));
 ```
 

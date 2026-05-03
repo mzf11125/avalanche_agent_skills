@@ -95,7 +95,7 @@ Add a `contractDeployerAllowListConfig`, `contractNativeMinterConfig`, etc. unde
 }
 ```
 
-## `alloc` — Pre-funded Accounts
+## `alloc` - Pre-funded Accounts
 
 > Keys are hex addresses **without** the `0x` prefix. Balances are in Wei with the `0x` prefix.
 

@@ -78,7 +78,7 @@ curl -X POST http://localhost:9650/ext/bc/P \
 
 ## C-Chain EVM API
 
-Standard Ethereum JSON-RPC — use any Ethereum library:
+Standard Ethereum JSON-RPC - use any Ethereum library:
 
 ```bash
 # Get block number

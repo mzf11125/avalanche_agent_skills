@@ -78,4 +78,4 @@ cast send $NATIVE_TOKEN_HOME_ADDRESS \
 
 ## ERC20TokenRemote as Wrapped Native
 
-If you want bridged native tokens to appear as an ERC-20 (not as the gas token) on the destination chain, use `ERC20TokenRemote` instead of `NativeTokenRemote`. This is simpler — no minter precompile setup needed.
+If you want bridged native tokens to appear as an ERC-20 (not as the gas token) on the destination chain, use `ERC20TokenRemote` instead of `NativeTokenRemote`. This is simpler - no minter precompile setup needed.

@@ -2,7 +2,7 @@
 
 ## What Is Subnet-EVM?
 
-Subnet-EVM is Avalanche's customizable EVM implementation. Every Avalanche L1 that runs an EVM chain uses Subnet-EVM (or a fork of it). It is fully EVM-compatible — any Solidity contract that runs on Ethereum runs on Subnet-EVM without modification.
+Subnet-EVM is Avalanche's customizable EVM implementation. Every Avalanche L1 that runs an EVM chain uses Subnet-EVM (or a fork of it). It is fully EVM-compatible - any Solidity contract that runs on Ethereum runs on Subnet-EVM without modification.
 
 ## Key Differences from Ethereum
 
@@ -18,7 +18,7 @@ Subnet-EVM is Avalanche's customizable EVM implementation. Every Avalanche L1 th
 
 ## Subnet-EVM vs C-Chain
 
-The C-Chain is itself a Subnet-EVM chain — it's the primary EVM chain on Avalanche. Custom L1s use the same Subnet-EVM binary with different genesis configurations.
+The C-Chain is itself a Subnet-EVM chain - it's the primary EVM chain on Avalanche. Custom L1s use the same Subnet-EVM binary with different genesis configurations.
 
 ## Precompile System
 
@@ -38,7 +38,7 @@ Subnet-EVM includes stateful precompiles at fixed addresses that extend EVM func
 - Solidity versions: all versions supported by the EVM opcode set
 - Opcodes: full EVM opcode support including PUSH0 (Shanghai)
 - JSON-RPC: full Ethereum JSON-RPC compatibility (`eth_*`, `net_*`, `web3_*`)
-- Tools: MetaMask, Hardhat, Foundry, ethers.js, viem — all work without modification
+- Tools: MetaMask, Hardhat, Foundry, ethers.js, viem - all work without modification
 - EIPs: EIP-1559 (type 2 transactions), EIP-2930 (access lists), EIP-4895 (withdrawals not applicable)
 
 ## GitHub

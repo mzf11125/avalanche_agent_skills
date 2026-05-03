@@ -4,10 +4,10 @@
 
 Teleporter is the official high-level SDK for Avalanche ICM. It consists of:
 
-- **`TeleporterMessenger`** — The main contract. Deployed at a deterministic address on every Subnet-EVM chain.
-- **`TeleporterRegistry`** — Tracks Teleporter versions. Use this to always get the current address.
-- **`ITeleporterMessenger`** — Solidity interface for sending messages.
-- **`ITeleporterReceiver`** — Solidity interface for receiving messages.
+- **`TeleporterMessenger`** - The main contract. Deployed at a deterministic address on every Subnet-EVM chain.
+- **`TeleporterRegistry`** - Tracks Teleporter versions. Use this to always get the current address.
+- **`ITeleporterMessenger`** - Solidity interface for sending messages.
+- **`ITeleporterReceiver`** - Solidity interface for receiving messages.
 
 ## Contract Addresses
 
@@ -25,7 +25,7 @@ Teleporter is the official high-level SDK for Avalanche ICM. It consists of:
 | TeleporterMessenger | `0x253b2784c75e510dD0fF1da844684a1aC0aa5fcf` |
 | TeleporterRegistry (C-Chain) | `0xF86Cb19Ad8405AEFa7d09C778215D2Cb6eBfB228` |
 
-> **Note**: `TeleporterMessenger` is deployed at the same address on all chains via Nick's method. `TeleporterRegistry` is **not** universal — the addresses above are for C-Chain only. Custom L1s must deploy their own `TeleporterRegistry`. See [Deploy TeleporterRegistry to a Subnet](https://github.com/ava-labs/icm-services/blob/main/README.md#deploy-teleporter-to-a-subnet).
+> **Note**: `TeleporterMessenger` is deployed at the same address on all chains via Nick's method. `TeleporterRegistry` is **not** universal - the addresses above are for C-Chain only. Custom L1s must deploy their own `TeleporterRegistry`. See [Deploy TeleporterRegistry to a Subnet](https://github.com/ava-labs/icm-services/blob/main/README.md#deploy-teleporter-to-a-subnet).
 
 ## Installing the Teleporter Contracts Package
 

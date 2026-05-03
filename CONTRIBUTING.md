@@ -25,7 +25,7 @@ Thank you for helping improve the Avalanche Developer AI Toolkit!
    ```yaml
    ---
    name: avalanche-<name>
-   description: <detailed description — this is what triggers agent invocation>
+   description: <detailed description - this is what triggers agent invocation>
    version: 0.1.0
    ---
    ```
